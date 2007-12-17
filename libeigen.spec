@@ -11,7 +11,6 @@ Group: 		System/Libraries
 License: 	LGPL
 URL: 		http://download.tuxfamily.org/eigen/
 Source:		eigen-%version.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  cmake
 
 %description
