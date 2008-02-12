@@ -15,7 +15,8 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:  cmake
 
 %description
-Eigen is a lightweight C++ template library for vector and matrix math, a.k.a. linear algebra.
+Eigen is a lightweight C++ template library for vector and matrix math, a.k.a.
+linear algebra.
 
 %package -n %{lib_name}-devel
 Summary: 	Headers for developing programs that will use %{name}
