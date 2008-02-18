@@ -4,7 +4,7 @@
 %define lib_name %mklibname eigen 1
 
 Name: 		%{name}
-Summary: 	Eigen is a lightweight C++ template library for vector and matrix math
+Summary: 	Lightweight C++ template library for vector and matrix math
 Version: 	%{version}
 Release: 	%{release}
 Group: 		System/Libraries
