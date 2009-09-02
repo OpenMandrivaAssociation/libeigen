@@ -1,6 +1,6 @@
 %define name libeigen
 %define version	1.0.5
-%define release %mkrel 3
+%define release %mkrel 4
 %define lib_name %mklibname eigen 1
 
 Name: 		%{name}
