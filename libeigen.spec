@@ -31,7 +31,7 @@ applications which will use %{name}.
 %setup -q -n eigen
 
 %build
-cd $RPM_BUILD_DIR/eigen/
+cd %{_builddir}/eigen/
 mkdir build
 cd build
 export QTDIR=/usr/lib/qt4/
@@ -49,7 +49,7 @@ cmake -DCMAKE_INSTALL_PREFIX=%_prefix \
 
 %install
 rm -rf %{buildroot}
-cd $RPM_BUILD_DIR/eigen/build/
+cd %{_builddir}/eigen/build/
 make DESTDIR=%buildroot install
 
 
