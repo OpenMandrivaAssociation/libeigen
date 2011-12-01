@@ -48,7 +48,7 @@ cmake -DCMAKE_INSTALL_PREFIX=%_prefix \
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 cd $RPM_BUILD_DIR/eigen/build/
 make DESTDIR=%buildroot install
 
@@ -56,7 +56,7 @@ make DESTDIR=%buildroot install
 
 
 %clean 
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -n %{lib_name}-devel
 %defattr(-,root,root)
