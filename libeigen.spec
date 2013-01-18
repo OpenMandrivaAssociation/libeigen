@@ -1,3 +1,4 @@
+%define	debug_package	%nil
 %define name libeigen
 %define version	1.0.5
 %define release %mkrel 5
@@ -10,8 +11,7 @@ Release: 	%{release}
 Group: 		System/Libraries
 License: 	LGPL
 URL: 		http://download.tuxfamily.org/eigen/
-Source:		eigen-%version.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Source0:	eigen-%version.tar.bz2
 BuildRequires:  cmake
 
 %description
@@ -46,25 +46,13 @@ cmake -DCMAKE_INSTALL_PREFIX=%_prefix \
 
 %make
 
-
 %install
-rm -rf $RPM_BUILD_ROOT
 cd $RPM_BUILD_DIR/eigen/build/
 make DESTDIR=%buildroot install
 
-
-
-
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files -n %{lib_name}-devel
-%defattr(-,root,root)
 %dir %_includedir/eigen/
 %_includedir/eigen/*.h
-
-
-
 
 %changelog
 * Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 1.0.5-4mdv2011.0
