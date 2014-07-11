@@ -6,7 +6,7 @@
 Summary:	Lightweight C++ template library for vector and matrix math
 Name:		libeigen
 Version:	1.0.5
-Release:	11
+Release:	12
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		http://download.tuxfamily.org/eigen/
