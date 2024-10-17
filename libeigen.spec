@@ -9,7 +9,7 @@ Version:	1.0.5
 Release:	16
 Group:		System/Libraries
 License:	LGPLv2+
-Url:		http://download.tuxfamily.org/eigen/
+Url:		https://download.tuxfamily.org/eigen/
 Source0:	http://download.tuxfamily.org/eigen/eigen-%{version}.tar.bz2
 BuildRequires:	cmake
 
